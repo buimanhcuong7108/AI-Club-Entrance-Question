@@ -4,9 +4,9 @@
 
 ### “TRẠM HỌC TẬP LƯU ĐỘNG” – Mô hình cung cấp tài liệu học tập tạm thời đa kênh
 
-Giải pháp **“Trạm học tập lưu động”** là một cơ chế hỗ trợ ngắn hạn dành cho học sinh trong thời gian sách giáo khoa chính thức chưa được cung ứng đầy đủ.
+Giải pháp **“Trạm học tập lưu động”** là một cơ chế hỗ trợ ngắn hạn dành cho học sinh trong thời gian sách giáo kha chính thức chưa được cung ứng đầy đủ.
 
-Thay vì cho phép học sinh hoặc nhà trường tự ý photocopy toàn bộ sách giáo khoa, nhà trường xây dựng một hệ thống tài liệu chuyển tiếp gồm:
+Thay vì cho phép học sinh hoặc nhà trường tự ý photocopy toàn bộ sách giáo khoa, nhà trường xây dựng một hệ thống và kho tài liệu chuyển tiếp gồm:
 
 - Tài liệu học tập do giáo viên tự biên soạn.
 - Phiếu học tập, sơ đồ kiến thức, bài tập và hướng dẫn tự học.
@@ -15,25 +15,21 @@ Thay vì cho phép học sinh hoặc nhà trường tự ý photocopy toàn bộ
 - Sách giáo khoa bản giấy được luân phiên sử dụng thông qua thư viện hoặc tủ sách dùng chung.
 - Các tài nguyên giáo dục mở hoặc tài liệu được cấp phép sử dụng hợp pháp.
 
-Mục tiêu của mô hình là bảo đảm học sinh **không phải chờ sách mới được học**, nhưng đồng thời việc cung cấp tài liệu cũng không tạo ra một hệ thống sao chép và phát hành sách giáo khoa trái phép.
+$\Longrightarrow$ Mục tiêu của mô hình là bảo đảm học sinh **không phải chờ sách mới được học**, nhưng đồng thời việc cung cấp tài liệu cũng không tạo ra một hệ thống sao chép và phát hành sách giáo khoa trái phép.
 
 ---
 
 # 2. Vấn đề cần giải quyết
 
-Trong giai đoạn chuyển tiếp khi nguồn cung sách giáo khoa chưa đáp ứng đủ nhu cầu, có thể xuất hiện tình trạng:
+Trong giai đoạn chuyển tiếp khi nguồn cung sách giáo khoa chưa đáp ứng đủ nhu cầu, có một số vấn đề cần giải quyết sau:
 
-- Một số học sinh chưa có sách trong những tuần đầu năm học.
 - Học sinh có sách và không có sách bị chênh lệch khả năng tiếp cận tài liệu.
 - Giáo viên gặp khó khăn khi yêu cầu học sinh theo dõi bài học tại nhà.
-- Phụ huynh có thể lựa chọn photocopy toàn bộ sách vì cần giải pháp nhanh.
+- Phụ huynh có thể lựa chọn photocopy toàn bộ sách vì cần giải pháp nhanh, rẻ và tiện ích.
 - Nhà trường có nguy cơ phát sinh vấn đề về bản quyền nếu tự sao chép và phân phối số lượng lớn.
+- Các thủ tục pháp lý khác có thể gây cản trở quá trình.
 
-Vì vậy, vấn đề thực tế không chỉ là:
-
-> “Làm sao có một bản sao của cuốn sách?”
-
-mà là:
+Vì vậy, vấn đề thực tế là:
 
 > **“Làm sao bảo đảm học sinh tiếp cận được nội dung cần thiết của chương trình trong thời gian ngắn nhất, với chi phí thấp nhất và không xâm phạm quyền tác giả?”**
 
@@ -41,32 +37,13 @@ mà là:
 
 # 3. Ý tưởng cốt lõi của giải pháp
 
-Giải pháp được xây dựng theo nguyên tắc:
+Nguyên tắc của giải phapas là:
 
-> ## “Không sao chép cả cuốn sách – cung cấp đúng thứ học sinh cần để tiếp tục học.”
-
-Thay vì tạo ra bản photocopy của toàn bộ sách giáo khoa, nhà trường chia nhu cầu học tập thành ba nhóm.
+> ## “Không Copy nguyên xi bản gốc mà chỉ cung cấp đủ để cho học sinh có thể tự học.”
 
 ### Nhóm 1 – Nội dung do nhà trường tự tạo
 
 Giáo viên biên soạn các **“phiếu học tập chuyển tiếp”** cho từng bài.
-
-Ví dụ:
-
-**Môn Toán – Bài: Hàm số**
-
-Phiếu có thể bao gồm:
-
-- Mục tiêu bài học.
-- Các khái niệm cần biết.
-- Công thức.
-- Ví dụ do giáo viên tự xây dựng.
-- Hình minh họa do giáo viên tự tạo.
-- Bài tập luyện tập.
-- Câu hỏi tự kiểm tra.
-- Hướng dẫn phần bài học cần chuẩn bị tiếp theo.
-
-Như vậy, học sinh vẫn có đủ thông tin cần thiết để học bài ngay cả khi chưa có sách.
 
 ### Nhóm 2 – Nội dung bản quyền được sử dụng từ nguồn hợp pháp
 
@@ -75,13 +52,6 @@ Nếu nhà xuất bản hoặc chủ sở hữu quyền tác giả cung cấp s�
 **Tạo QR Code/link → dẫn học sinh đến nguồn chính thức.**
 
 Nhà trường không tải lại, nhân bản hoặc phát tán file PDF của sách nếu không có quyền cho phép.
-
-Ví dụ:
-
-> QR “Bài 1 – Sách giáo khoa chính thức”
-> → dẫn tới nền tảng điện tử hợp pháp của nhà xuất bản.
-
-Cách này giúp giảm chi phí lưu trữ và tránh việc trường trở thành nơi phát hành bản sao không được phép.
 
 ### Nhóm 3 – Sách bản giấy dùng chung
 
@@ -93,16 +63,6 @@ Nhà trường tận dụng:
 - Sách được phụ huynh hoặc tổ chức tặng hợp pháp.
 
 Các bản sách có sẵn được đưa vào một hệ thống **mượn – trả ngắn hạn**.
-
-Ví dụ:
-
-> Một lớp có 20 học sinh nhưng chỉ có 10 sách.
->
-> 10 cuốn sách được đặt tại lớp/thư viện để học sinh sử dụng trong giờ học.
->
-> 10 học sinh còn lại sử dụng phiếu học tập chuyển tiếp hoặc nguồn số hợp pháp.
-
-Như vậy, số sách có sẵn được khai thác tối đa mà không cần sao chép toàn bộ.
 
 ---
 
@@ -150,47 +110,7 @@ KẾT THÚC CHẾ ĐỘ CHUYỂN TIẾP
 
 ---
 
-# 5. Cách triển khai cụ thể
-
-## Giai đoạn 1 – Kiểm kê nhu cầu
-
-Ngay khi phát hiện thiếu sách, giáo viên chủ nhiệm hoặc nhà trường lập danh sách:
-
-| Nội dung | Số lượng |
-|---|---:|
-| Tổng số học sinh | 40 |
-| Học sinh đã có đủ sách | 25 |
-| Học sinh thiếu sách | 15 |
-| Số sách còn trong thư viện | 8 |
-| Số học sinh cần tài liệu chuyển tiếp | 7 |
-
-Nhờ đó nhà trường không cần phát tài liệu đại trà mà chỉ hỗ trợ đúng nhóm học sinh đang thiếu sách.
-
----
-
-## Giai đoạn 2 – Tạo “Phiếu học tập chuyển tiếp”
-
-Mỗi bài học được giáo viên chuẩn bị một phiếu ngắn, khoảng **2–4 trang**.
-
-Cấu trúc phiếu:
-
-1. Tên bài.
-2. Mục tiêu.
-3. Kiến thức trọng tâm.
-4. Ví dụ minh họa.
-5. Hình/sơ đồ do giáo viên tự tạo.
-6. Bài tập.
-7. Câu hỏi kiểm tra.
-8. QR/link nguồn tài liệu chính thức nếu có.
-9. Ghi chú: *“Tài liệu hỗ trợ tạm thời trong thời gian chờ sách giáo khoa.”*
-
-Một nguyên tắc quan trọng là giáo viên **tự viết phần giải thích bằng cách diễn đạt của mình**, thay vì quét và đưa toàn bộ các trang của sách giáo khoa vào phiếu.
-
----
-
 # 6. Sử dụng bản quyền như thế nào?
-
-Đây là phần quan trọng nhất của giải pháp.
 
 Sách giáo khoa là loại tác phẩm được pháp luật về quyền tác giả bảo hộ. Việc pháp luật cho phép một số trường hợp sao chép hoặc sử dụng tác phẩm phục vụ học tập và giảng dạy **không đồng nghĩa với việc nhà trường được tự do sao chép và phát hành toàn bộ sách giáo khoa cho tất cả học sinh**.
 
@@ -215,27 +135,7 @@ Vì vậy, mô hình áp dụng nguyên tắc:
 
 ---
 
-# 7. Một điểm đặc biệt của mô hình: “QR thay vì PDF”
-
-Một trong những cách triển khai rẻ và nhanh nhất là xây dựng **Bảng tài nguyên học tập bằng QR Code**.
-
-Ví dụ:
-
-| Bài học | Nội dung hỗ trợ | Hình thức |
-|---|---|---|
-| Bài 1 | Tóm tắt kiến thức | PDF do giáo viên tạo |
-| Bài 1 | Sách điện tử chính thức | QR |
-| Bài 1 | Bài tập | PDF do giáo viên tạo |
-| Bài 1 | Video bài giảng | Link hợp pháp |
-| Bài 1 | Sách giấy | Thư viện |
-
-Học sinh chỉ cần dùng điện thoại quét QR.
-
-Nhà trường **không cần lưu bản sao toàn bộ sách giáo khoa**, mà đóng vai trò như một **“cổng truy cập”** tới các nguồn học tập hợp pháp.
-
----
-
-# 8. Mô hình “3 lớp bảo đảm” cho học sinh
+# 7. Mô hình “3 lớp bảo đảm” cho học sinh
 
 Để tránh trường hợp học sinh không có điện thoại hoặc Internet, giải pháp không phụ thuộc hoàn toàn vào công nghệ.
 
@@ -251,19 +151,9 @@ Học sinh không có thiết bị vẫn được phát tài liệu giấy do gi
 
 Học sinh có điện thoại/máy tính có thể truy cập nguồn số chính thức thông qua QR.
 
-Như vậy:
-
-> **Có sách → dùng sách.**
->
-> **Không có sách nhưng có thiết bị → dùng tài nguyên số hợp pháp.**
->
-> **Không có sách và không có thiết bị → dùng phiếu học tập + tài liệu tại lớp.**
-
-Điều này làm giảm nguy cơ giải pháp chuyển đổi số vô tình tạo thêm bất bình đẳng giữa học sinh.
-
 ---
 
-# 9. Cơ chế vận hành tại trường
+# 8. Cơ chế vận hành tại trường
 
 Có thể tổ chức theo mô hình:
 
@@ -316,7 +206,7 @@ THƯ VIỆN       GIÁO VIÊN CHỦ NHIỆM
 
 ---
 
-# 10. Thời hạn của giải pháp
+# 9. Thời hạn của giải pháp
 
 “Trạm học tập lưu động” chỉ hoạt động trong một khoảng thời gian xác định.
 
@@ -331,19 +221,19 @@ Giải pháp **không nhằm thay thế lâu dài** cho sách giáo khoa chính 
 
 ---
 
-# 11. Vì sao không chọn photocopy toàn bộ sách?
+# 10. Vì sao không chọn photocopy toàn bộ sách?
 
 Photocopy toàn bộ có ưu điểm là dễ hiểu và triển khai nhanh, nhưng có ba hạn chế lớn.
 
-### 11.1. Vấn đề bản quyền
+### 10.1. Vấn đề bản quyền
 
 Việc pháp luật cho phép một số trường hợp sao chép phục vụ học tập không đồng nghĩa với quyền sao chép cả tác phẩm để phân phối rộng rãi.
 
-### 11.2. Chi phí
+### 10.2. Chi phí
 
 Một bộ sách có nhiều trang. Photocopy cho hàng trăm hoặc hàng nghìn học sinh sẽ tạo ra chi phí lớn, trong khi thời gian sử dụng chỉ vài tuần.
 
-### 11.3. Khó kiểm soát
+### 10.3. Khó kiểm soát
 
 Một khi file PDF hoặc bản photocopy đã được tạo, nó có thể tiếp tục bị chia sẻ sang những nhóm khác.
 
@@ -351,23 +241,7 @@ Ngược lại, việc dẫn học sinh đến **nguồn chính thức** giúp g
 
 ---
 
-# 12. Tại sao không chỉ yêu cầu phụ huynh tự mua sách?
-
-Bởi giải pháp này không xử lý được tình trạng thiếu nguồn cung tại thời điểm cần học.
-
-Mục đích của mô hình không phải thay thế trách nhiệm cung ứng sách, mà tạo ra một **“cầu nối”** giữa:
-
-> **Thời điểm học sinh cần học**
-
-và
-
-> **Thời điểm sách chính thức được cung ứng.**
-
-Do đó nhà trường vẫn phải tiếp tục phối hợp với đơn vị cung ứng sách để hoàn thành việc cấp sách.
-
----
-
-# 13. Phương án chi phí
+# 11. Phương án chi phí
 
 Giải pháp có thể triển khai với chi phí tương đối thấp.
 
@@ -384,43 +258,9 @@ Chi phí chủ yếu nằm ở việc in các phiếu học tập ngắn và t�
 
 ---
 
-# 14. Ví dụ minh họa
+# 12. Những nguyên tắc để tránh sai phạm bản quyền
 
-Giả sử một lớp có **45 học sinh nhưng chỉ có 30 bộ sách**.
-
-Có **15 học sinh chưa có sách**.
-
-## Cách làm thông thường
-
-Photocopy 15 bộ sách.
-
-- Số lượng trang lớn.
-- Phát sinh chi phí.
-- Có rủi ro về bản quyền.
-- Khó kiểm soát việc tiếp tục phát tán bản sao.
-
-## Cách làm theo “Trạm học tập lưu động”
-
-- 30 học sinh có sách → sử dụng sách bình thường.
-- 8 học sinh → mượn sách tại thư viện theo ca/tiết.
-- 4 học sinh → sử dụng tài liệu số chính thức qua QR.
-- 3 học sinh không có thiết bị → sử dụng phiếu học tập in giấy.
-
-Giáo viên trên lớp vẫn dạy cùng một nội dung.
-
-Khi 15 bộ sách chính thức được cung ứng:
-
-> **Kết thúc cơ chế hỗ trợ chuyển tiếp.**
-
-Như vậy:
-
-> **Mục tiêu không phải tạo ra 15 bản sao của sách, mà là bảo đảm 15 học sinh vẫn tiếp cận được nội dung bài học.**
-
----
-
-# 15. Những nguyên tắc để tránh sai phạm bản quyền
-
-Nhà trường có thể ban hành một quy tắc đơn giản:
+Nhà trường có thể ban hàn một quy tắc đơn giản:
 
 > ## “Nguồn nào không rõ quyền sử dụng thì không đưa vào kho tài liệu.”
 
@@ -446,52 +286,7 @@ Cách phân loại này giúp giáo viên không phải tự mình phán đoán 
 
 ---
 
-# 16. Khả năng mở rộng
-
-Mô hình có thể triển khai ở nhiều cấp.
-
-### Cấp lớp
-
-Giáo viên tạo phiếu học tập và QR.
-
-### Cấp trường
-
-Nhà trường xây dựng một **“Trạm học tập lưu động”**.
-
-### Cấp địa phương
-
-Nhiều trường cùng sử dụng một hệ thống tài liệu được kiểm duyệt.
-
-### Cấp hệ thống
-
-Có thể xây dựng một cổng chung chứa:
-
-- Tài nguyên giáo dục mở.
-- Tài liệu giáo viên tự biên soạn.
-- Liên kết tới các nhà xuất bản.
-- Danh mục sách đang thiếu.
-- Số lượng học sinh cần hỗ trợ.
-
-Như vậy, giải pháp có khả năng phát triển từ một sáng kiến của một lớp thành một cơ chế hỗ trợ trên quy mô lớn.
-
----
-
-# 17. Các chỉ số đánh giá hiệu quả
-
-Có thể đánh giá mô hình bằng những chỉ số đơn giản:
-
-| Chỉ số | Mục tiêu |
-|---|---|
-| Tỷ lệ học sinh có tài liệu học tập | ≥ 100% |
-| Tỷ lệ tiết học bị ảnh hưởng do thiếu sách | Gần 0% |
-| Chi phí trung bình/học sinh | Thấp hơn photocopy toàn bộ |
-| Tỷ lệ tài liệu có nguồn gốc rõ ràng | 100% |
-| Thời gian kích hoạt hệ thống | Trong 1–2 ngày |
-| Thời gian duy trì | Đến khi sách chính thức được cung ứng |
-
----
-
-# 18. Rủi ro và biện pháp xử lý
+# 13. Rủi ro và biện pháp xử lý
 
 | Rủi ro | Biện pháp |
 |---|---|
@@ -504,36 +299,7 @@ Có thể đánh giá mô hình bằng những chỉ số đơn giản:
 | Phụ huynh tự ý photocopy toàn bộ sách | Nhà trường hướng dẫn rõ phương án hợp pháp thay thế |
 
 ---
-
-# 19. Điểm sáng tạo của giải pháp
-
-Điểm sáng tạo không nằm ở việc tạo ra một ứng dụng phức tạp, mà ở việc **thay đổi cách giải quyết vấn đề**.
-
-### Bài toán ban đầu
-
-> **“Thiếu sách → phải tạo thêm bản sao sách.”**
-
-### Cách tiếp cận của giải pháp
-
-> **“Thiếu sách → xác định nội dung học tập cần thiết → cung cấp nội dung đó bằng nhiều nguồn hợp pháp.”**
-
-Do đó, công nghệ chỉ là công cụ hỗ trợ.
-
-Một trường có điều kiện công nghệ tốt có thể dùng:
-
-- QR Code.
-- Website.
-- Hệ thống học tập trực tuyến.
-
-Một trường có điều kiện hạn chế vẫn có thể triển khai hoàn toàn bằng:
-
-> **Sách thư viện + phiếu học tập + tài liệu giáo viên + bảng thông báo.**
-
-Điều này giúp giải pháp có tính thực tế và không phụ thuộc tuyệt đối vào thiết bị số.
-
----
-
-# 20. Kết luận
+# 14. Kết luận
 
 “Trạm học tập lưu động” là một giải pháp tạm thời nhằm bảo đảm học sinh không bị gián đoạn việc học trong giai đoạn sách giáo khoa chính thức chưa được cung ứng đầy đủ.
 
@@ -541,20 +307,25 @@ Giải pháp không xem photocopy toàn bộ sách giáo khoa là phương án m
 
 > **Sách dùng chung + tài liệu giáo viên tự biên soạn + tài nguyên giáo dục mở + nguồn số chính thức + hệ thống QR/link hợp pháp.**
 
-Cách tiếp cận này đồng thời giải quyết năm mục tiêu:
+Về mặt pháp lý, cần đặc biệt phân biệt giữa các trường hợp sử dụng tác phẩm được pháp luật cho phép phục vụ học tập/giảng dạy với việc sao chép và phát hành hàng loạt một tác phẩm.
 
-1. **Học sinh vẫn có thể tiếp tục học đúng tiến độ.**
-2. **Giảm nguy cơ vi phạm quyền tác giả.**
-3. **Giảm chi phí phát sinh.**
-4. **Có thể triển khai nhanh ở cấp lớp, cấp trường và cấp địa phương.**
-5. **Có thời hạn rõ ràng và kết thúc khi nguồn sách chính thức được phục hồi.**
+# 15. Tài liệu, công cụ và thông tin tham khảo
 
-Về mặt pháp lý, cần đặc biệt phân biệt giữa các trường hợp sử dụng tác phẩm được pháp luật cho phép phục vụ học tập/giảng dạy với việc sao chép và phát hành hàng loạt một tác phẩm. Vì vậy, phương án quản trị an toàn hơn là ưu tiên:
+### A. Thông tin tham khảo
 
-- Tài liệu tự tạo.
-- Nguồn giáo dục mở.
-- Nguồn được cấp phép.
-- Liên kết tới nguồn chính thức.
-- Sách giấy dùng chung.
+**1. Nhóm thông tin về thực trạng cung ứng và chỉ đạo:**
+* [Bộ GD-ĐT lý giải tình trạng thiếu sách giáo khoa đầu năm học (VietnamNet)](https://vietnamnet.vn/bo-gd-dt-ly-giai-tinh-trang-sach-giao-khoa-dau-nam-hoc-2555174.html)
+* [Phó thủ tướng yêu cầu xử lý ngay tình trạng thiếu sách giáo khoa (Tuổi Trẻ)](https://tuoitre.vn/pho-thu-tuong-yeu-cau-xu-ly-ngay-tinh-trang-thieu-sach-giao-khoa-lap-duong-day-nong-24-7-100260909202156556.html)
 
-Mô hình **“Trạm học tập lưu động”** vì vậy đóng vai trò như một **cơ chế cầu nối**: bảo đảm quyền tiếp cận học tập của học sinh trong ngắn hạn, đồng thời tôn trọng quyền sở hữu trí tuệ và không thay thế hệ thống cung ứng sách giáo khoa chính thức.
+**2. Nhóm thông tin về chủ trương bản quyền và chuyển đổi số:**
+* [Bộ Giáo dục và Đào tạo sẽ nắm bản quyền, giao địa phương in ấn SGK (VietnamPlus)](https://www.vietnamplus.vn/bo-giao-duc-va-dao-tao-se-nam-ban-quyen-giao-dia-phuong-in-an-sach-giao-khoa-post1139607.vnp)
+* [NXB Giáo dục VN có trách nhiệm bảo đảm cung cấp miễn phí bản điện tử SGK (Thanh Niên)](https://thanhnien.vn/se-co-bo-sach-giao-khoa-moi-tu-nam-hoc-2028-2029-185261002091328194.html)
+
+**3. Nhóm quy định pháp lý và kỹ thuật:**
+* [Quy định tiêu chuẩn, quy trình chuyển thể SGK bản in sang SGK điện tử (Bộ GD&ĐT)](https://moet.gov.vn/tin-tuc/quy-dinh-tieu-chuan-quy-trinh-chuyen-the-chinh-sua-cap-nhat-sgk-ban-in-sang-sgk-dien-tu.html)
+* [Quy trình đăng ký và bảo hộ bản quyền sách điện tử (Công ty Luật ACC)](https://congtyluatacc.vn/ban-quyen-sach-dien-tu/)
+
+### B. Công cụ hỗ trợ
+- Chatbot ChatGPT GPT - 5.6 Luna
+- Chatbot Gemini 3.1 - Pro
+- Chatbot Claude Sonnet 5.5 Extra
