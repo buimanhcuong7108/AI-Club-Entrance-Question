@@ -110,7 +110,7 @@ KẾT THÚC CHẾ ĐỘ CHUYỂN TIẾP 🏁
 
 ---
 
-# 6. ⚖️ Sử dụng bản quyền như thế nào?
+# 5. ⚖️ Sử dụng bản quyền như thế nào?
 
 Sách giáo khoa là loại tác phẩm được pháp luật về quyền tác giả bảo hộ. Việc pháp luật cho phép một số trường hợp sao chép hoặc sử dụng tác phẩm phục vụ học tập và giảng dạy **không đồng nghĩa với việc nhà trường được tự do sao chép và phát hành toàn bộ sách giáo khoa cho tất cả học sinh**. ⚠️
 
@@ -135,7 +135,7 @@ Vì vậy, mô hình áp dụng nguyên tắc:
 
 ---
 
-# 7. 🛡️ Mô hình “3 lớp bảo đảm” cho học sinh
+# 6. 🛡️ Mô hình “3 lớp bảo đảm” cho học sinh
 
 Để tránh trường hợp học sinh không có điện thoại hoặc Internet, giải pháp không phụ thuộc hoàn toàn vào công nghệ.
 
@@ -153,7 +153,7 @@ Học sinh có điện thoại/máy tính có thể truy cập nguồn số chí
 
 ---
 
-# 8. ⚙️ Cơ chế vận hành tại trường
+# 7. ⚙️ Cơ chế vận hành tại trường
 
 Có thể tổ chức theo mô hình:
 
@@ -206,7 +206,7 @@ THƯ VIỆN 🏛️     GIÁO VIÊN CHỦ NHIỆM 👨‍🏫
 
 ---
 
-# 9. ⏳ Thời hạn của giải pháp
+# 8. ⏳ Thời hạn của giải pháp
 
 “Trạm học tập lưu động” chỉ hoạt động trong một khoảng thời gian xác định.
 
@@ -221,19 +221,19 @@ Giải pháp **không nhằm thay thế lâu dài** cho sách giáo khoa chính 
 
 ---
 
-# 10. 🤔 Vì sao không chọn photocopy toàn bộ sách?
+# 9. 🤔 Vì sao không chọn photocopy toàn bộ sách?
 
 Photocopy toàn bộ có ưu điểm là dễ hiểu và triển khai nhanh, nhưng có ba hạn chế lớn.
 
-### 10.1. ©️ Vấn đề bản quyền
+### 9.1. ©️ Vấn đề bản quyền
 
 Việc pháp luật cho phép một số trường hợp sao chép phục vụ học tập không đồng nghĩa với quyền sao chép cả tác phẩm để phân phối rộng rãi.
 
-### 10.2. 💰 Chi phí
+### 9.2. 💰 Chi phí
 
 Một bộ sách có nhiều trang. Photocopy cho hàng trăm hoặc hàng nghìn học sinh sẽ tạo ra chi phí lớn, trong khi thời gian sử dụng chỉ vài tuần.
 
-### 10.3. 📉 Khó kiểm soát
+### 9.3. 📉 Khó kiểm soát
 
 Một khi file PDF hoặc bản photocopy đã được tạo, nó có thể tiếp tục bị chia sẻ sang những nhóm khác.
 
@@ -241,7 +241,7 @@ Ngược lại, việc dẫn học sinh đến **nguồn chính thức** 🌟 gi
 
 ---
 
-# 11. 💵 Phương án chi phí
+# 10. 💵 Phương án chi phí
 
 Giải pháp có thể triển khai với chi phí tương đối thấp.
 
@@ -258,7 +258,7 @@ Chi phí chủ yếu nằm ở việc in các phiếu học tập ngắn và t�
 
 ---
 
-# 12. 🚦 Những nguyên tắc để tránh sai phạm bản quyền
+# 11. 🚦 Những nguyên tắc để tránh sai phạm bản quyền
 
 Nhà trường có thể ban hàn một quy tắc đơn giản:
 
@@ -286,7 +286,7 @@ Cách phân loại này giúp giáo viên không phải tự mình phán đoán 
 
 ---
 
-# 13. ⚠️ Rủi ro và biện pháp xử lý
+# 12. ⚠️ Rủi ro và biện pháp xử lý
 
 | Rủi ro 🌩️ | Biện pháp 🛡️ |
 |---|---|
@@ -299,7 +299,7 @@ Cách phân loại này giúp giáo viên không phải tự mình phán đoán 
 | Phụ huynh tự ý photocopy toàn bộ sách | Nhà trường hướng dẫn rõ phương án hợp pháp thay thế 🗣️ |
 
 ---
-# 14. 🎯 Kết luận
+# 13. 🎯 Kết luận
 
 “Trạm học tập lưu động” 🚐 là một giải pháp tạm thời nhằm bảo đảm học sinh không bị gián đoạn việc học trong giai đoạn sách giáo khoa chính thức chưa được cung ứng đầy đủ.
 
@@ -309,7 +309,7 @@ Giải pháp không xem photocopy toàn bộ sách giáo khoa là phương án m
 
 Về mặt pháp lý, cần đặc biệt phân biệt giữa các trường hợp sử dụng tác phẩm được pháp luật cho phép phục vụ học tập/giảng dạy với việc sao chép và phát hành hàng loạt một tác phẩm. ⚖️
 
-# 15. 📎 Tài liệu, công cụ và thông tin tham khảo
+# 14. 📎 Tài liệu, công cụ và thông tin tham khảo
 
 ### A. 📰 Thông tin tham khảo
 
