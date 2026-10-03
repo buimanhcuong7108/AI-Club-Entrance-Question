@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Trạm học tập lưu động</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap">
+  <script src="/qrcode.min.js"
+    onerror="var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';document.head.appendChild(s)"></script>
+  <style>
+    :root {
+      --bg: #f2f5f8;
+      --card: #fff;
+      --ink: #17212b;
+      --mut: #5d6b7a;
+      --line: #dbe2e9;
+      --btn: #1e2a44;
+      --btn-ink: #fff;
+      --soft: #e8edf3;
+      --a: #1b7a43;
+      --a-bg: #dff3e7;
+      --b: #1d5cb8;
+      --b-bg: #dfeafb;
+      --c: #8f5a00;
+      --c-bg: #fbefcf;
+      --d: #b3261e;
+      --d-bg: #fbe3e0;
+      box-sizing: border-box;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px)
+    }
+
+    @media (prefers-color-scheme:dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #11161c;
+        --card: #1a212a;
+        --ink: #e9eef3;
+        --mut: #9aa7b5;
+        --line: #2a333e;
+        --btn: #dbe5f5;
+        --btn-ink: #10192b;
+        --soft: #232c37;
+        --a: #6fd596;
+        --a-bg: #16382a;
+        --b: #86b4f7;
+        --b-bg: #1b2f4d;
+        --c: #f0bb5a;
+        --c-bg: #41330f;
+        --d: #ff8f82;
+        --d-bg: #4a201c
+      }
+    }
+
+    :root[data-theme="dark"] {
+      --bg: #11161c;
+      --card: #1a212a;
+      --ink: #e9eef3;
+      --mut: #9aa7b5;
+      --line: #2a333e;
+      --btn: #dbe5f5;
+      --btn-ink: #10192b;
+      --soft: #232c37;
+      --a: #6fd596;
+      --a-bg: #16382a;
+      --b: #86b4f7;
+      --b-bg: #1b2f4d;
+      --c: #f0bb5a;
+      --c-bg: #41330f;
+      --d: #ff8f82;
+      --d-bg: #4a201c
+    }
+
+    html {
+      scroll-padding-top: env(safe-area-inset-top, 0px)
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 400 15px/1.55 "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 16px 48px
+    }
+
+    header {
+      position: sticky;
+      top: env(safe-area-inset-top, 0px);
+      z-index: 5;
+      background: var(--bg);
+      border-bottom: 1px solid var(--line)
+    }
+
+    .bar {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 12px 16px 0
+    }
+
+    h1 {
+      font-size: 20px;
+      margin: 0 0 2px;
+      font-weight: 700
+    }
+
+    .sub {
+      margin: 0 0 10px;
+      color: var(--mut);
+      font-size: 13.5px
+    }
+
+    nav {
+      display: flex;
+      gap: 4px;
+      overflow-x: auto
+    }
+
+    nav button {
+      border: 0;
+      background: none;
+      color: var(--mut);
+      font: 500 14px inherit;
+      font-family: inherit;
+      padding: 9px 14px;
+      border-bottom: 3px solid transparent;
+      cursor: pointer;
+      white-space: nowrap
+    }
+
+    nav button[aria-selected=true] {
+      color: var(--ink);
+      border-color: var(--btn);
+      font-weight: 700
+    }
+
+    h2 {
+      font-size: 17px;
+      margin: 26px 0 10px
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 14px 16px
+    }
+
+    .grid {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr))
+    }
+
+    .rule {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 18px 0 0;
+      padding: 14px 18px;
+      border-left: 5px solid var(--d);
+      background: var(--card);
+      border-radius: 4px 10px 10px 4px
+    }
+
+    .steps {
+      display: grid;
+      gap: 8px;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr))
+    }
+
+    .step {
+      text-align: left;
+      font: inherit;
+      color: inherit;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px 12px;
+      cursor: pointer
+    }
+
+    .step b {
+      display: block
+    }
+
+    .step span {
+      font-size: 13px;
+      color: var(--mut)
+    }
+
+    .step[aria-current=true] {
+      border-color: var(--btn);
+      box-shadow: inset 0 0 0 1px var(--btn)
+    }
+
+    .step.done {
+      opacity: .6
+    }
+
+    .big {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.2
+    }
+
+    .mut {
+      color: var(--mut);
+      font-size: 13.5px
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 12.5px;
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 99px
+    }
+
+    .cA {
+      background: var(--a-bg);
+      color: var(--a)
+    }
+
+    .cB {
+      background: var(--b-bg);
+      color: var(--b)
+    }
+
+    .cC {
+      background: var(--c-bg);
+      color: var(--c)
+    }
+
+    .cD {
+      background: var(--d-bg);
+      color: var(--d)
+    }
+
+    .doc {
+      border-left: 5px solid var(--line)
+    }
+
+    .doc.A {
+      border-left-color: var(--a)
+    }
+
+    .doc.B {
+      border-left-color: var(--b)
+    }
+
+    .doc.C {
+      border-left-color: var(--c)
+    }
+
+    .doc.arch {
+      opacity: .5
+    }
+
+    .doc h3 {
+      font-size: 15px;
+      margin: 6px 0 2px
+    }
+
+    .row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center
+    }
+
+    .tools {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 16px 0 12px;
+      align-items: center
+    }
+
+    button.btn,
+    a.btn {
+      font: 600 14px inherit;
+      font-family: inherit;
+      border: 0;
+      background: var(--btn);
+      color: var(--btn-ink);
+      padding: 8px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block
+    }
+
+    button.btn:disabled {
+      opacity: .4;
+      cursor: not-allowed
+    }
+
+    button.ghost,
+    a.ghost {
+      background: var(--soft);
+      color: var(--ink)
+    }
+
+    button.sm,
+    a.sm {
+      padding: 5px 10px;
+      font-size: 13px
+    }
+
+    .chip {
+      font: 500 13px inherit;
+      font-family: inherit;
+      border: 1px solid var(--line);
+      background: var(--card);
+      color: var(--ink);
+      padding: 5px 12px;
+      border-radius: 99px;
+      cursor: pointer
+    }
+
+    .chip[aria-pressed=true] {
+      background: var(--btn);
+      color: var(--btn-ink);
+      border-color: var(--btn)
+    }
+
+    input,
+    select,
+    textarea {
+      font: inherit;
+      color: var(--ink);
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px 10px;
+      width: 100%
+    }
+
+    label.f {
+      display: block;
+      font-size: 13.5px;
+      font-weight: 500;
+      margin: 10px 0 4px
+    }
+
+    .two {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr 1fr
+    }
+
+    .banner {
+      background: var(--c-bg);
+      color: var(--c);
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin-bottom: 12px;
+      font-weight: 500
+    }
+
+    .empty {
+      padding: 28px;
+      text-align: center;
+      color: var(--mut);
+      border: 1px dashed var(--line);
+      border-radius: 10px
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 8px 6px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: middle
+    }
+
+    th {
+      font-weight: 600;
+      color: var(--mut);
+      font-size: 13px
+    }
+
+    .tw {
+      overflow-x: auto
+    }
+
+    .late {
+      color: var(--d);
+      font-weight: 600
+    }
+
+    dialog {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--card);
+      color: var(--ink);
+      padding: 18px;
+      width: min(520px, calc(100% - 24px));
+      max-height: 90vh
+    }
+
+    dialog::backdrop {
+      background: rgba(10, 15, 22, .55)
+    }
+
+    .opt {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px 10px;
+      margin-bottom: 6px;
+      cursor: pointer
+    }
+
+    .opt input {
+      width: auto;
+      margin-top: 5px
+    }
+
+    .opt:has(input:checked) {
+      border-color: var(--btn);
+      background: var(--soft)
+    }
+
+    .hint {
+      margin-top: 8px;
+      padding: 10px 12px;
+      border-radius: 8px;
+      font-size: 14px
+    }
+
+    #qr {
+      display: flex;
+      justify-content: center;
+      padding: 14px;
+      background: #fff;
+      border-radius: 8px;
+      margin: 10px 0;
+      min-height: 60px
+    }
+
+    button:focus-visible,
+    a:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible,
+    .opt:focus-within {
+      outline: 3px solid var(--b);
+      outline-offset: 2px
+    }
+
+    @media (max-width:520px) {
+      .two {
+        grid-template-columns: 1fr
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="bar">
+      <h1>Trạm học tập lưu động</h1>
+      <p class="sub">Giữ nhịp học của học sinh khi sách giáo khoa chưa về đủ, mà không sao chép trái phép.</p>
+      <nav role="tablist" id="tabs">
+        <button role="tab" data-tab="home">Tổng quan</button>
+        <button role="tab" data-tab="docs">Kho tài liệu</button>
+        <button role="tab" data-tab="lib">Thư viện mượn – trả</button>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap" id="view"></main>
+
+  <dialog id="dlgDoc">
+    <form id="fDoc">
+      <h2 style="margin-top:0">Thêm tài liệu vào kho</h2>
+      <p class="mut" style="margin:0 0 8px">Chọn nguồn của tài liệu. Hệ thống tự xếp nhóm và chặn nhóm chưa rõ quyền.
+      </p>
+      <div id="opts"></div>
+      <div id="hint" class="hint"></div>
+      <label class="f" for="dTitle">Tên tài liệu</label>
+      <input id="dTitle" required maxlength="90" placeholder="Ví dụ: Phiếu học tập Phân số">
+      <div class="two">
+        <div><label class="f" for="dSub">Môn</label><input id="dSub" required maxlength="30" placeholder="Toán"></div>
+        <div><label class="f" for="dGrade">Lớp</label><input id="dGrade" required maxlength="6" placeholder="6"></div>
+      </div>
+      <label class="f" for="dLink">Liên kết nguồn <span class="mut" id="linkNote"></span></label>
+      <input id="dLink" type="url" placeholder="https://...">
+      <label class="f" for="dNote">Ghi chú</label>
+      <textarea id="dNote" rows="2" maxlength="160" placeholder="Nội dung tối thiểu cần học, hạn sử dụng..."></textarea>
+      <div class="row" style="margin-top:14px;justify-content:flex-end">
+        <button type="button" class="btn ghost" id="cancelDoc">Hủy</button>
+        <button type="submit" class="btn" id="saveDoc">Thêm vào kho</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="dlgQR">
+    <h2 style="margin-top:0" id="qrTitle">Mã QR</h2>
+    <div id="qr"></div>
+    <p class="mut" id="qrLink" style="word-break:break-all"></p>
+    <div class="row" style="justify-content:flex-end"><button class="btn" id="closeQR">Đóng</button></div>
+  </dialog>
+
+  <script>
+    const KEY = 'tram-hoc-tap-v1';
+    const CL = {
+      A: { n: 'A – Tự tạo', d: 'Giáo viên hoặc nhà trường tự biên soạn', h: 'Dùng theo quy định của trường.' },
+      B: { n: 'B – Nguồn mở', d: 'Có giấy phép mở (Creative Commons, tài nguyên giáo dục mở)', h: 'Dùng đúng điều khoản giấy phép và ghi rõ nguồn.' },
+      C: { n: 'C – Nguồn chính thức', d: 'Nhà xuất bản hoặc chủ sở hữu cung cấp hợp pháp (ebook, tài khoản, link)', h: 'Chỉ chia sẻ link hoặc QR. Không tải lại, không nhân bản file.' },
+      D: { n: 'D – Chưa rõ quyền', d: 'Bản scan, PDF hoặc bản sao sách giáo khoa chưa rõ quyền sử dụng', h: 'Không tải lên hệ thống và không phát hành.' }
+    };
+    const STAGES = [['Tuần 1', 'Kích hoạt hỗ trợ'], ['Tuần 2–3', 'Duy trì phiếu học tập, thư viện, tài nguyên số'], ['Có sách chính thức', 'Kết thúc chế độ chuyển tiếp'], ['Sau khi kết thúc', 'Thu hồi, cập nhật, lưu trữ tài liệu']];
+    const day = n => { const d = new Date(); d.setDate(d.getDate() + n); return d.toISOString().slice(0, 10) };
+    const seed = () => ({
+      stage: 0,
+      docs: [
+        { id: 1, t: 'Phiếu học tập: Phân số', s: 'Toán', g: '6', c: 'A', l: '', n: 'Tóm tắt kiến thức và 5 bài tập. Dữ liệu mẫu.' },
+        { id: 2, t: 'Sơ đồ kiến thức: Quang hợp', s: 'Khoa học tự nhiên', g: '6', c: 'A', l: '', n: 'In khổ A4 cho học sinh không có thiết bị. Dữ liệu mẫu.' },
+        { id: 3, t: 'Bài giảng mở môn Toán', s: 'Toán', g: '6', c: 'B', l: 'https://www.khanacademy.org', n: 'Kiểm tra giấy phép từng bài trước khi dùng. Dữ liệu mẫu.' },
+        { id: 4, t: 'Sách điện tử chính thức của nhà xuất bản', s: 'Ngữ văn', g: '6', c: 'C', l: 'https://hanhtrangso.nxbgd.vn', n: 'Thay bằng link thật mà trường được cấp quyền. Dữ liệu mẫu.' }],
+      books: [{ id: 1, t: 'Toán 6 (bản giấy)', total: 5 }, { id: 2, t: 'Ngữ văn 6, tập 1', total: 4 }, { id: 3, t: 'Khoa học tự nhiên 6', total: 3 }],
+      loans: [{ id: 1, who: 'Nguyễn Minh An', cls: '6A2', book: 1, due: day(5), ret: false }], nid: 10
+    });
+    let S = seed(), tab = 'home', filter = 'all', q = '', ver = 0, mode = 'server', chain = Promise.resolve();
+    // Lưu trữ: ưu tiên máy chủ local (app.py). Mở file trực tiếp thì tự dùng localStorage.
+    async function init() {
+      try { const j = await (await fetch('/api/state')).json(); ver = j.v; if (j.state) S = j.state; else await save() }
+      catch (e) { mode = 'local'; try { const r = localStorage.getItem(KEY); if (r) S = JSON.parse(r) } catch (_) { } }
+      render();
+    }
+    function save() { return chain = chain.then(doSave) }
+    async function doSave() {
+      if (mode === 'local') { try { localStorage.setItem(KEY, JSON.stringify(S)) } catch (e) { } return }
+      try {
+        const r = await fetch('/api/state', { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ v: ver, state: S }) });
+        const j = await r.json();
+        if (r.status === 409) { S = j.state; ver = j.v; render(); alert('Có người vừa cập nhật dữ liệu. Trang đã tải bản mới nhất, hãy thao tác lại.') }
+        else if (r.ok) ver = j.v;
+        else alert('Máy chủ từ chối dữ liệu này.')
+      } catch (e) { alert('Không lưu được. Kiểm tra xem app.py còn chạy không.') }
+    }
+    const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    const $ = s => document.querySelector(s);
+    const avail = b => b.total - S.loans.filter(l => !l.ret && l.book === b.id).length;
+
+    function render() {
+      document.querySelectorAll('#tabs button').forEach(b => b.setAttribute('aria-selected', b.dataset.tab === tab));
+      $('#view').innerHTML = tab === 'home' ? home() : tab === 'docs' ? docs() : lib();
+    }
+
+    function home() {
+      const act = S.docs.filter(d => !d.arch);
+      const total = S.books.reduce((a, b) => a + b.total, 0), free = S.books.reduce((a, b) => a + avail(b), 0);
+      const paper = act.filter(d => d.c === 'A').length, dig = act.filter(d => d.l && (d.c === 'B' || d.c === 'C')).length;
+      return `<p class="rule">Không copy nguyên xi bản gốc. Chỉ cung cấp đủ để học sinh tự học.</p>
+ <h2>Giai đoạn hiện tại</h2>
+ <div class="steps">${STAGES.map((s, i) => `<button class="step ${i < S.stage ? 'done' : ''}" data-stage="${i}" ${i === S.stage ? 'aria-current="true"' : ''}><b>${s[0]}</b><span>${s[1]}</span></button>`).join('')}</div>
+ <h2>Ba lớp bảo đảm cho học sinh</h2>
+ <div class="grid">
+ <div class="card"><b>Lớp 1 – Sách giấy</b><div class="big">${free}/${total}</div><div class="mut">bản còn trong thư viện và tủ sách dùng chung</div><p><button class="btn sm ghost" data-go="lib">Mở thư viện</button></p></div>
+ <div class="card"><b>Lớp 2 – Phiếu học tập</b><div class="big">${paper}</div><div class="mut">tài liệu giáo viên tự biên soạn, in cho học sinh không có thiết bị</div><p><button class="btn sm ghost" data-go="docs" data-f="A">Xem phiếu</button></p></div>
+ <div class="card"><b>Lớp 3 – Tài nguyên số</b><div class="big">${dig}</div><div class="mut">nguồn mở hoặc chính thức có link/QR cho học sinh có điện thoại</div><p><button class="btn sm ghost" data-go="docs" data-f="all">Xem nguồn số</button></p></div>
+ </div>
+ <h2>Bốn nhóm tài liệu</h2>
+ <div class="grid">${Object.keys(CL).map(k => `<div class="card"><span class="badge c${k}">${CL[k].n}</span><p style="margin:8px 0 4px">${CL[k].d}</p><div class="mut">${CL[k].h}</div></div>`).join('')}</div>
+ <p class="mut" style="margin-top:22px">Nguồn nào không rõ quyền sử dụng thì không đưa vào kho tài liệu. <button class="btn sm ghost" data-reset>Đặt lại dữ liệu mẫu</button></p>`;
+    }
+
+    function docs() {
+      const list = S.docs.filter(d => (filter === 'all' || d.c === filter) && (d.t + ' ' + d.s).toLowerCase().includes(q.toLowerCase()));
+      const ended = S.stage >= 2 && S.docs.some(d => !d.arch);
+      return `<div class="tools">
+ <input id="q" type="search" placeholder="Tìm theo tên hoặc môn" value="${esc(q)}" style="flex:1;min-width:160px;width:auto">
+ <button class="btn" data-add>Thêm tài liệu</button></div>
+ <div class="row" style="margin-bottom:14px">${['all', 'A', 'B', 'C'].map(k => `<button class="chip" data-filter="${k}" aria-pressed="${filter === k}">${k === 'all' ? 'Tất cả' : CL[k].n}</button>`).join('')}</div>
+ ${ended ? `<div class="banner">Chế độ chuyển tiếp đã kết thúc. Hãy thu hồi và lưu trữ tài liệu. <button class="btn sm" data-archive>Lưu trữ tất cả</button></div>` : ''}
+ ${list.length ? `<div class="grid">${list.map(d => `<div class="card doc ${d.c} ${d.arch ? 'arch' : ''}">
+ <div class="row" style="justify-content:space-between"><span class="badge c${d.c}">${CL[d.c].n}</span>${d.arch ? '<span class="mut">Đã lưu trữ</span>' : ''}</div>
+ <h3>${esc(d.t)}</h3><div class="mut">${esc(d.s)}, lớp ${esc(d.g)}</div>
+ ${d.n ? `<p class="mut" style="margin:6px 0">${esc(d.n)}</p>` : ''}
+ <div class="row" style="margin-top:8px">
+ ${d.l ? `<a class="btn sm" href="${esc(d.l)}" target="_blank" rel="noopener">Mở nguồn</a><button class="btn sm ghost" data-qr="${d.id}">Tạo QR</button>` : ''}
+ <button class="btn sm ghost" data-deldoc="${d.id}">Xóa</button></div></div>`).join('')}</div>`
+          : `<div class="empty">Chưa có tài liệu phù hợp. Bấm “Thêm tài liệu” để bắt đầu kho chuyển tiếp.</div>`}`;
+    }
+
+    function lib() {
+      const open = S.loans.filter(l => !l.ret), today = day(0), av = S.books.filter(b => avail(b) > 0);
+      const bn = id => (S.books.find(b => b.id === id) || { t: '(đã xóa)' }).t;
+      return `<h2 style="margin-top:20px">Sách hiện có</h2>
+ <div class="card tw"><table><tr><th>Tên sách</th><th>Còn / Tổng</th><th></th></tr>
+ ${S.books.map(b => `<tr><td>${esc(b.t)}</td><td>${avail(b)} / ${b.total}</td><td><button class="btn sm ghost" data-delbook="${b.id}">Xóa</button></td></tr>`).join('') || '<tr><td colspan="3" class="mut">Chưa có sách nào.</td></tr>'}</table>
+ <form id="fBook" class="row" style="margin-top:12px"><input id="bT" required placeholder="Tên sách" style="flex:1;min-width:150px;width:auto"><input id="bN" type="number" min="1" value="1" required style="width:80px"><button class="btn sm" type="submit">Thêm sách</button></form></div>
+ <h2>Cho mượn ngắn hạn</h2>
+ <form id="fLoan" class="card"><div class="two">
+ <div><label class="f" for="lW">Học sinh</label><input id="lW" required placeholder="Họ và tên"></div>
+ <div><label class="f" for="lC">Lớp</label><input id="lC" required placeholder="6A2"></div></div>
+ <div class="two"><div><label class="f" for="lB">Sách</label><select id="lB" required>${av.length ? av.map(b => `<option value="${b.id}">${esc(b.t)} (còn ${avail(b)})</option>`).join('') : '<option value="">Hết sách để mượn</option>'}</select></div>
+ <div><label class="f" for="lD">Hạn trả</label><input id="lD" type="date" required value="${day(7)}" min="${today}"></div></div>
+ <p style="margin:12px 0 0"><button class="btn" type="submit" ${av.length ? '' : 'disabled'}>Cho mượn</button></p></form>
+ <h2>Đang mượn (${open.length})</h2>
+ ${open.length ? `<div class="card tw"><table><tr><th>Học sinh</th><th>Lớp</th><th>Sách</th><th>Hạn trả</th><th></th></tr>
+ ${open.map(l => `<tr><td>${esc(l.who)}</td><td>${esc(l.cls)}</td><td>${esc(bn(l.book))}</td><td class="${l.due < today ? 'late' : ''}">${l.due.split('-').reverse().join('/')}${l.due < today ? ' (quá hạn)' : ''}</td><td><button class="btn sm" data-ret="${l.id}">Đã trả</button></td></tr>`).join('')}</table></div>`
+          : '<div class="empty">Chưa có học sinh nào đang mượn sách.</div>'}`;
+    }
+
+    // ---- sự kiện ----
+    document.addEventListener('click', e => {
+      const t = e.target.closest('button'); if (!t) return; const d = t.dataset;
+      if (d.tab) { tab = d.tab; render(); return }
+      if (d.go) { tab = d.go; if (d.f) filter = d.f; render(); scrollTo(0, 0); return }
+      if (d.stage !== undefined) { S.stage = +d.stage; save(); render(); return }
+      if (d.filter) { filter = d.filter; render(); return }
+      if (d.add) { openAdd(); return }
+      if (d.archive) { S.docs.forEach(x => x.arch = true); save(); render(); return }
+      if (d.deldoc) { S.docs = S.docs.filter(x => x.id !== +d.deldoc); save(); render(); return }
+      if (d.qr) { showQR(S.docs.find(x => x.id === +d.qr)); return }
+      if (d.delbook) { S.books = S.books.filter(x => x.id !== +d.delbook); save(); render(); return }
+      if (d.ret) { S.loans.find(x => x.id === +d.ret).ret = true; save(); render(); return }
+      if (d.reset !== undefined) { if (confirm('Đặt lại toàn bộ dữ liệu về bản mẫu?')) { S = seed(); save(); render() } }
+    });
+    document.addEventListener('input', e => { if (e.target.id === 'q') { q = e.target.value; const p = e.target.selectionStart; render(); const i = $('#q'); i.focus(); i.setSelectionRange(p, p) } });
+    document.addEventListener('submit', e => {
+      e.preventDefault(); const id = e.target.id;
+      if (id === 'fBook') { S.books.push({ id: S.nid++, t: $('#bT').value.trim(), total: +$('#bN').value }); save(); render() }
+      if (id === 'fLoan') { const b = +$('#lB').value; if (!b) return; S.loans.push({ id: S.nid++, who: $('#lW').value.trim(), cls: $('#lC').value.trim(), book: b, due: $('#lD').value, ret: false }); save(); render() }
+      if (id === 'fDoc') {
+        const c = document.querySelector('input[name=c]:checked').value; if (c === 'D') return;
+        const l = $('#dLink').value.trim();
+        if (c === 'C' && !/^https?:\/\//i.test(l)) { $('#dLink').focus(); return }
+        S.docs.unshift({ id: S.nid++, t: $('#dTitle').value.trim(), s: $('#dSub').value.trim(), g: $('#dGrade').value.trim(), c, l, n: $('#dNote').value.trim() });
+        save(); $('#dlgDoc').close(); filter = 'all'; render()
+      }
+    });
+
+    // ---- hộp thoại thêm tài liệu ----
+    function openAdd() {
+      $('#fDoc').reset();
+      $('#opts').innerHTML = Object.keys(CL).map((k, i) => `<label class="opt"><input type="radio" name="c" value="${k}" ${i === 0 ? 'checked' : ''}><span><span class="badge c${k}">${CL[k].n}</span><br><span class="mut">${CL[k].d}</span></span></label>`).join('');
+      pick(); $('#dlgDoc').showModal();
+    }
+    function pick() {
+      const c = document.querySelector('input[name=c]:checked').value;
+      const h = $('#hint'); h.className = 'hint c' + c;
+      h.textContent = c === 'D' ? 'Không thêm được. ' + CL.D.h + ' Hãy tự soạn phiếu học tập hoặc tìm nguồn chính thức.' : CL[c].h;
+      $('#saveDoc').disabled = c === 'D';
+      $('#dLink').required = c === 'C';
+      $('#linkNote').textContent = c === 'C' ? '(bắt buộc với nguồn chính thức)' : '(không bắt buộc)';
+    }
+    $('#dlgDoc').addEventListener('change', e => { if (e.target.name === 'c') pick() });
+    $('#cancelDoc').onclick = () => $('#dlgDoc').close();
+
+    // ---- QR ----
+    function showQR(d) {
+      $('#qrTitle').textContent = 'QR: ' + d.t; $('#qrLink').textContent = d.l;
+      const box = $('#qr'); box.innerHTML = '';
+      try { if (typeof QRCode === 'undefined') throw 0; new QRCode(box, { text: d.l, width: 200, height: 200 }) }
+      catch (err) { box.textContent = 'Không tạo được mã QR. Hãy dùng liên kết bên dưới.'; box.style.color = '#17212b' }
+      $('#dlgQR').showModal();
+    }
+    $('#closeQR').onclick = () => $('#dlgQR').close();
+    // Tự làm mới mỗi 15 giây để thấy thay đổi từ máy khác (bỏ qua khi đang nhập liệu)
+    setInterval(async () => {
+      if (mode !== 'server' || document.querySelector('dialog[open]') || document.activeElement.matches('input,select,textarea')) return;
+      try { const j = await (await fetch('/api/state')).json(); if (j.v !== ver && j.state) { S = j.state; ver = j.v; render() } } catch (e) { }
+    }, 15000);
+    init();
+  </script>
+</body>
+
+</html>
