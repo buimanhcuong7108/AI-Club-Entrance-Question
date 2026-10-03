@@ -1,5 +1,12 @@
 # 📚 ĐỀ XUẤT GIẢI PHÁP HỖ TRỢ HỌC SINH DUY TRÌ VIỆC HỌC TRONG THỜI GIAN CHƯA ĐƯỢC CUNG ỨNG ĐẦY ĐỦ SÁCH GIÁO KHOA Ở MỘT SỐ ĐỊA PHƯƠNG
 
+* 👤 **Họ và tên:** Bùi Mạnh Cường
+* 🆔 **MSSV:** 26520212
+* 🏫 **Trường và Lớp:** Trường Đại học Công nghệ thông tin ĐHQG TP.HCM KHMT2026.1
+* 🎯 **Mục đích:** Đề xuất giải pháp "Trạm học tập lưu động" - một mô hình hỗ trợ học tập tạm thời, sáng tạo và tuân thủ Luật Sở hữu trí tuệ nhằm giải quyết tình trạng thiếu hụt sách giáo khoa đầu năm học, đảm bảo học sinh không bị gián đoạn chương trình với chi phí tối ưu nhất. Bài làm được xây dựng phục vụ yêu cầu tuyển chọn đầu vào của Club Trí tuệ Nhân tạo (AI Club).
+
+___
+
 ## 1. 🏷️ Tên giải pháp
 
 ### 🚐 “TRẠM HỌC TẬP LƯU ĐỘNG” – Mô hình cung cấp tài liệu học tập tạm thời đa kênh
